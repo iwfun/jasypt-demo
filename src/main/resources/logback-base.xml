@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <!--环境变量 应用名字-->
+    <springProperty scope="context" name="APPLICATION" source="spring.application.name"/>
+    <property name="LOG_PATTERN" value="${APPLICATION} | %d{yyyy-MM-dd HH:mm:ss.SSS} | %5p | %t -> %c{1}#%M:%L | %msg%n%wex"></property>
+    <!--日志过滤级别-->
+    <property name="LOG_FILTER_LEVEL" value="INFO"/>
+</included>

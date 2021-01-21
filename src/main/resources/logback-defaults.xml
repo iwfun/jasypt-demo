@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+    <!--初始化参数-->
+    <include resource="logback-base.xml"/>
+    <!--控台输出输出-->
+    <include resource="logback-console.xml"/>
+    <root level="INFO">
+        <appender-ref ref="console"/>
+    </root>
+</included>

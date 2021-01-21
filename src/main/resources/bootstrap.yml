@@ -1,0 +1,7 @@
+NACOS-NAMESPACE: DEV_ENV
+
+server:
+  port: 8088
+
+spring.application:
+  name: iam-auth
